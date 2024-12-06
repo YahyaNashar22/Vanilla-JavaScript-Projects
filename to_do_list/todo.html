@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="todo.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <main class="wrapper">
+        <img
+          src="../assets/note.png"
+          width="128px"
+          height="128px"
+          class="note-img"
+        />
+        <h1 class="title">To Do List</h1>
+
+        <div class="input-row">
+          <input type="text" id="input-box" placeholder="Any plans on your mind ?" />
+          <button class="btn" id="input-btn" onclick="addTask()">ADD</button>
+        </div>
+
+        <ul class="list" id="tasks-list">
+        </ul>
+    </main>
+    <script src="todo.js"></script>
+  </body>
+</html>

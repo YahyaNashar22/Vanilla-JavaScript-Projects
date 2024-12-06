@@ -1,0 +1,72 @@
+.note-img {
+  transition: 0.3s ease-in-out;
+}
+.note-img:hover {
+  transform: rotateZ(25deg) rotateY(25deg);
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 40px auto;
+}
+
+#input-box {
+  padding: 10px 5px;
+  text-align: left;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  background-color: var(--background);
+  border: none;
+  color: var(--primary);
+}
+
+#input-box:focus {
+  outline: none;
+  border-bottom: 1px solid var(--secondary);
+}
+
+#input-btn {
+  padding: 8px 20px;
+  flex-wrap: wrap;
+}
+
+
+#tasks-list > li {
+  padding: 16px 48px 16px 48px;
+  position: relative;
+  cursor: pointer;
+}
+
+.checked::before {
+  content: "✔️"; 
+  font-size: 1.5rem;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-60%); 
+}
+
+.checked {
+    text-decoration: line-through var(--purple-glow);
+}
+
+
+#tasks-list > li > span {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: var(--blue-accent);
+    text-align: center;
+    transition: 0.2s ease-in;
+}
+
+#tasks-list > li > span:hover{
+  transform: scale(1.4) rotateZ(25deg) rotateY(25deg);
+
+}
